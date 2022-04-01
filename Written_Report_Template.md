@@ -8,14 +8,21 @@ We will analyze the relationship between the amount goal and the launched date o
 ### Purpose
 > Throught the worksheet provided we have to use somo tools in excel in order to get the enough data to accomplish an analysis for the campaigns.
 ## Analysis and Challenges
-To analyse this worksheet, was neccesary to add some columns with some information, then we be able to get the charts required.
+To analyse this worksheet, was neccesary to add some columns with some information, so we would be able to get the charts required.
 
-To start with, I had to add a new colum called "date created conversion", which was converted to a regular date due the lauched_date column provided was in Unix timestamp form, in this case we use the formula:=(((J2/60)/60)/24)+DATE(1970,1,1), where "J2" is the column where the Unixstamp is located, the rest of the values are constants values, then, another colum was created and called: "year", to extract the year of the date converted, we use the next formula:[Year()](https://support.microsoft.com/en-us/office/year-function-c64f017a-1354-490d-981f-578e8ec8d3b9?ui=en-us&rs=en-us&ad=us).
-Another requrement was to extract the "month" of the regular date, for this case as the chart required asked for the month in text form, we converted the date directly into a text with the next formula: [text](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c). Finally we 
-
+To start with, I had to add a new colum called "date created conversion", where a value was converted to a regular date due the "lauched_date" column provided was in Unix timestamp form, in this case we use the **formula**:=(((J2/60)/60)/24)+DATE(1970,1,1), where "J2" is the column where the Unixstamp is located, the rest of the values are constants values, then, another colum was created and called: "year", to extract the year of the date converted, we use the next formula:[Year()](https://support.microsoft.com/en-us/office/year-function-c64f017a-1354-490d-981f-578e8ec8d3b9?ui=en-us&rs=en-us&ad=us).
+Another requrement was to extract the "month" of the regular date, for this case as the chart required asked for the month in text form, we converted the date directly into a text with the next formula: [text](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c).Following with this analysis using the "Category and Subcategory" column, we add two columns called: "parent category" and "subcategory", we will fill them by separating the "Category and Subcategory" values into the two columns mentioned already. The way we do this is: In the tool bar choose Text to column icon,--> "A converter text to columns wizard will appears", Inside the "Converter Text to columns Wizard":
+  * Select "Delimited" and click "Next."
+  * Uncheck the "Tab" box and check "Other."
+  * Place a backslash ( / ) in the box, then click "Next."
+  * Select "Text" from the "Column data format."
+  * Click "Finish."
+Continuing with the rest of the analysis, we create the corresponding pivot tables to show the requiered information.
+To create them, we choose: Insert --> Pivot Table --> Select the data range to use --> Nex worksheet --> OK. Once it was created, we can select the fields to be filtered and create the table requiered, finally we create a graph by choosing: Insert menu --> chart -->. I must say that we can modify the characteristics of the graph by taping double click in the bar chart, a format chart window will appear to change the format of the chart. 
 `Note`
-Learn more about the use of [Unix timestamps](https://websiteseochecker.com/blog/what-is-timestamp/).
-[TimestampConverter](https://www.epochconverter.com)
+Learn more about the use of [Unix timestamps]: (https://websiteseochecker.com/blog/what-is-timestamp/).
+
+`More Help`[TimestampConverter](https://www.epochconverter.com)
 ### Analysis of Outcomes Based on Launch Date
 ![Theater Outcomes By Launch Date](/Users/Fabiola/Desktop/Data/Challenges/Resources)
 In this line graph we can observe how values are represented according to the total number of campaigns in the different months in the periods of the years showed in the previous graph. For this graph were taken only the succesful, canceled and failed fields and it also specifies the "parent category" as theater, denoting that the shape is similar to a bell shape, although there is a representative difference between the succesful and failed campaigns both show an increment at the beggining, then a peak in May month where also both suffered a drop fall, showing the month of "May" as their highest point througt the line graph.
