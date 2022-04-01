@@ -18,16 +18,17 @@ Another requrement was to extract the "month" of the regular date, for this case
   * Select "Text" from the "Column data format."
   * Click "Finish."
 Continuing with the rest of the analysis, we create the corresponding pivot tables to show the requiered information.
-To create them, we choose: Insert --> Pivot Table --> Select the data range to use --> Nex worksheet --> OK. Once it was created, we can select the fields to be filtered and create the table requiered, finally we create a graph by choosing: Insert menu --> chart -->. I must say that we can modify the characteristics of the graph by taping double click in the bar chart, a format chart window will appear to change the format of the chart. 
+To create them, we choose: Insert --> Pivot Table --> Select the data range to use --> Nex worksheet --> OK. Once it was created, we can select the fields to be filtered and create the table requiered, finally we create a graph by choosing: Insert menu --> chart. I must say that we can modify the characteristics of the graph by taping double click in the bar chart, a format chart window will appear to change the format of the chart. 
+
 `Note`
 Learn more about the use of [Unix timestamps]: (https://websiteseochecker.com/blog/what-is-timestamp/).
 
 `More Help`[TimestampConverter](https://www.epochconverter.com)
 ### Analysis of Outcomes Based on Launch Date
-![Theater Outcomes By Launch Date](/Users/Fabiola/Desktop/Data/Challenges/Resources)
+![Theater Outcomes By Launch Date](/Users/Fabiola/Desktop/Data/Challenges/Resources/Theater_Outcomes_vs_Launch)
 In this line graph we can observe how values are represented according to the total number of campaigns in the different months in the periods of the years showed in the previous graph. For this graph were taken only the succesful, canceled and failed fields and it also specifies the "parent category" as theater, denoting that the shape is similar to a bell shape, although there is a representative difference between the succesful and failed campaigns both show an increment at the beggining, then a peak in May month where also both suffered a drop fall, showing the month of "May" as their highest point througt the line graph.
 ### Analysis of Outcomes Based on Goals
-> ![Outcomes Based on Goals](/Users/Fabiola/Desktop/Data/Challenges/Resources)
+> ![Outcomes Based on Goals](/Users/Fabiola/Desktop/Data/Challenges/Resources/Outcomes_vs_Goals)
 At first glance we can observe there is a considered variability in the line graph, we can see that ranges were created or classes knowed in an statistic term, the tarjet for these ranges is to classified the "outcomes" fields according the amount goal with an wide class of about $5000 for each range. We can see that the highest points are represented when the amount in a range was the second lowest, on the other hand the second highest point is where the amount is one of the highest, wich is in the nine range. The behaviour in this line graph is similar to a mirror due that, while the "succesful" projects follow their line, the "failed" project are showed in the opposite side of that line, we have to say that this effect gets a lap in ranges seven and eleven, were we can conclude that that bigger range was not enought to mantein the project alive.
 ### Challenges and Difficulties Encountered
 > My Challenges
