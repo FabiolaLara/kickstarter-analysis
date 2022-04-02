@@ -8,7 +8,7 @@ We will analyze the relationship between the amount goal and the launched date o
 ### Purpose
 > Throught the worksheet provided we have to use somo tools in excel in order to get the enough data to accomplish an analysis for the campaigns.
 ## Analysis and Challenges
-To analyse this worksheet, was neccesary to add some columns with some information, so we would be able to get the charts required.
+To analyze this worksheet, it was neccesary to add some columns with some information, so we would be able to get the charts required.
 
 To start with, I had to add a new colum called "date created conversion", where a value was converted to a regular date due the "lauched_date" column provided was in Unix timestamp form, in this case we use the **formula**:=(((J2/60)/60)/24)+DATE(1970,1,1), where "J2" is the column where the Unixstamp is located, the rest of the values are constants values, then, another colum was created and called: "year", to extract the year of the date converted, we use the next formula:[Year()](https://support.microsoft.com/en-us/office/year-function-c64f017a-1354-490d-981f-578e8ec8d3b9?ui=en-us&rs=en-us&ad=us).
 Another requrement was to extract the "month" of the regular date, for this case as the chart required asked for the month in text form, we converted the date directly into a text with the next formula: [text](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c).Following with this analysis using the "Category and Subcategory" column, we add two columns called: "parent category" and "subcategory", we will fill them by separating the "Category and Subcategory" values into the two columns mentioned already. The way we do this is: In the tool bar choose Text to column icon,--> "A converter text to columns wizard will appears", Inside the "Converter Text to columns Wizard":
@@ -25,8 +25,8 @@ Learn more about the use of [Unix timestamps]: (https://websiteseochecker.com/bl
 
 `More Help`[TimestampConverter](https://www.epochconverter.com)
 ### Analysis of Outcomes Based on Launch Date
-![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/101358301/161333789-fe70bfe3-c3b7-4e13-8267-786814ed1c2c.png)
-![Theater Outcomes By Launch Date]() 
+<!--![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/101358301/161333789-fe70bfe3-c3b7-4e13-8267-786814ed1c2c.png)-->
+![Theater Outcomes By Launch Date](/Resources/Theater_Outcomes_vs_Launch.png) 
 
 In this line graph we can observe how values are represented according to the total number of campaigns in the different months in the periods of the years showed in the previous graph. For this graph were taken only the succesful, canceled and failed fields and it also specifies the "parent category" as theater, denoting that the shape is similar to a bell shape, although there is a representative difference between the succesful and failed campaigns both show an increment at the beggining, then a peak in May month where also both suffered a drop fall, showing the month of "May" as their highest point througt the line graph.
 ### Analysis of Outcomes Based on Goals
