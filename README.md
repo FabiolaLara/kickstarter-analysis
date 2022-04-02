@@ -43,7 +43,7 @@ At first glance we can observe there is a considered variability in the line gra
 ### Challenges and Difficulties Encountered
 > My Challenges
 To start with: I had some troubles in converting the date to obtain the month, given that It was un "Unix format", then I realized I had to use ths formula: =(((J2088/60)/60)/24)+DATE(1970,1,1).
-Secondly: To convert a number month in text, was also difficult, because the position of values in the date cells had and specific order, so when you want to apply "month" function it displays wire numbers, so I had to change the order of the date so excell could recognize the position of the month ans extract it. 
+Secondly: To convert a number month in text, was also difficult, because the position of values in the date cells had and specific order, so when you want to apply "month" function it displays wire numbers, so I had to change the order of the date so excell could recognize the position of the month and extracts it. 
 
 ![MonthFunctionText](/Resources/monthFunctionText.pgn)
 
