@@ -44,7 +44,13 @@ At first glance we can observe there is a considered variability in the line gra
 > My Challenges
 To start with: I had some troubles in converting the date to obtain the month, given that It was un "Unix format", then I realized I had to use ths formula: =(((J2088/60)/60)/24)+DATE(1970,1,1).
 Secondly: To convert a number month in text, was also difficult, because the position of values in the date cells had and specific order, so when you want to apply "month" function it displays wire numbers, so I had to change the order of the date so excell could recognize the position of the month ans extract it. 
-Third: This challenge still being a challenge until now, today 31/march/2022. The third line graph can not shows any value for the "canceled projects", I don´t know why, but after applyng the formula to sort the information with the requiered paramethers doesn´t display the values. There are "canceled" projects in some differents ranges, but they just aren´t display, I have worked and spent time a lot. 
+
+![MonthFunctionText](/Resources/monthFunctionText.pgn)
+
+Third: It was kind of difficult to stablished the percentage Axis in that scale, to undesrtand this, firstable we have to get the percentage with this formula: `$B2)/$E2`, and that is, for all the values, then we have to select the select the percentage format value, and finally select the vertical axis and stablish the range distributed along this axi.
+
+![PercentageAxis](/Resources/Percentage.png)
+
 ## Results
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
