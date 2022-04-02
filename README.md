@@ -31,7 +31,10 @@ Learn more about the use of [Unix timestamps]: (https://websiteseochecker.com/bl
 
 ### Analysis of Outcomes Based on Launch Date
 
-![Theater Outcomes By Launch Date](/Resources/Theater_Outcomes_vs_Launch.png) 
+<p align="center">
+  <img width="460" height="300" src="/Resources/Theater_Outcomes_vs_Launch.png">
+</p>
+<!--![Theater Outcomes By Launch Date](/Resources/Theater_Outcomes_vs_Launch.png) -->
 
 In this line graph we can observe how values are represented according to the total number of campaigns in the different months in the periods of the years showed in the previous graph. For this graph were taken only the succesful, canceled and failed fields and it also specifies the "parent category" as theater, denoting that the shape is similar to a bell shape, although there is a representative difference between the succesful and failed campaigns both show an increment at the beggining, then a peak in May month where also both suffered a drop fall, showing the month of "May" as their highest point througt the line graph.
 
