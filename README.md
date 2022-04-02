@@ -24,7 +24,7 @@ To create them, we choose: Insert --> Pivot Table --> Select the data range to u
 `Note`
 Learn more about the use of [Unix timestamps]: (https://websiteseochecker.com/blog/what-is-timestamp/).
 
-`More Help`[TimestampConverter](https://www.epochconverter.com)
+`More Help` [TimestampConverter](https://www.epochconverter.com)
 
 ### Analysis of Outcomes Based on Launch Date
 
