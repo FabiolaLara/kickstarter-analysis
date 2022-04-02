@@ -18,6 +18,9 @@ Another requrement was to extract the "month" of the regular date, for this case
   * Place a backslash ( / ) in the box, then click "Next."
   * Select "Text" from the "Column data format."
   * Click "Finish."
+ 
+![TextToColumns](/Resources/textColumns.png)
+
 Continuing with the rest of the analysis, we create the corresponding pivot tables to show the requiered information.
 To create them, we choose: Insert --> Pivot Table --> Select the data range to use --> Nex worksheet --> OK. Once it was created, we can select the fields to be filtered and create the table requiered, finally we create a graph by choosing: Insert menu --> chart. I must say that we can modify the characteristics of the graph by taping double click in the bar chart, a format chart window will appear to change the format of the chart. 
 
