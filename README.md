@@ -10,9 +10,9 @@ We will analyze the relationship between the amount goal and the launched date o
 ## Analysis and Challenges
 To analyze this worksheet, it was neccesary to add some columns with some information, so we would be able to get the charts required.
 
-To start with, I had to add a new colum called "date created conversion", where a value was converted to a regular date due the "lauched_date" column provided was in Unix timestamp form.
+ To start with, I had to add a new colum called "date created conversion", where a value was converted to a regular date due the "lauched_date" column provided was in Unix timestamp form.
 In this case we use the **formula**:=(((J2/60)/60)/24)+DATE(1970,1,1), where "J2" is the column where the Unixstamp is located, the rest of the values are constants values, then, another colum was created and called: "year", to extract the year of the date converted, we use the next formula:[Year()](https://support.microsoft.com/en-us/office/year-function-c64f017a-1354-490d-981f-578e8ec8d3b9?ui=en-us&rs=en-us&ad=us).
-Another requrement was to extract the "month" of the regular date, for this case as the chart required asked for the month in text form, we converted the date directly into a text with the next formula: [text](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c).Following with this analysis using the "Category and Subcategory" column, we add two columns called: "parent category" and "subcategory", we will fill them by separating the "Category and Subcategory" values into the two columns mentioned already. The way we do this is: In the tool bar choose Text to column icon,--> "A converter text to columns wizard will appears", Inside the "Converter Text to columns Wizard":
+Another requirement was to extract the "month" of the regular date, for this case as the chart required asked for the month in text form, we converted the date directly into a text with the next formula:[text](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c).Following with this analysis using the "Category and Subcategory" column, we add two columns called: "parent category" and "subcategory", we will fill them by separating the "Category and Subcategory" values into the two columns mentioned already. The way we do this is: In the tool bar choose Text to column icon,--> "A converter text to columns wizard will appears", Inside the "Converter Text to columns Wizard":
   * Select "Delimited" and click "Next."
   * Uncheck the "Tab" box and check "Other."
   * Place a backslash ( / ) in the box, then click "Next."
@@ -42,12 +42,9 @@ In this line graph we can observe how values are represented according to the to
 At first glance we can observe there is a considered variability in the line graph, we can see that ranges were created or classes knowed in an statistic term, the tarjet for these ranges is to classified the "outcomes" fields according the amount goal with an wide class of about $5000 for each range. We can see that the highest points are represented when the amount in a range was the second lowest, on the other hand the second highest point is where the amount is one of the highest, wich is in the nine range. The behaviour in this line graph is similar to a mirror due that, while the "succesful" projects follow their line, the "failed" project are showed in the opposite side of that line, we have to say that this effect gets a lap in ranges seven and eleven, were we can conclude that that bigger range was not enought to mantein the project alive.
 ### Challenges and Difficulties Encountered
 > My Challenges
-To start with: I had some troubles in converting the date to obtain the month, given that It was un "Unix format", then I realized I had to use ths formula: =(((J2088/60)/60)/24)+DATE(1970,1,1).
-Secondly: To convert a number month in text, was also difficult, because the position of values in the date cells had and specific order, so when you want to apply "month" function it displays wire numbers, so I had to change the order of the date so excell could recognize the position of the month and extracts it. 
-
-![MonthFunctionText](/Resources/monthFunctionText.pgn)
-
-Third: It was kind of difficult to stablished the percentage Axis in that scale, to undesrtand this, firstable we have to get the percentage with this formula: `$B2)/$E2`, and that is, for all the values, then we have to select the select the percentage format value, and finally select the vertical axis and stablish the range distributed along this axi.
+- To start with: I had some troubles in converting the date to obtain the month, given that It was un "Unix format", then I realized I had to use ths formula: =(((J2088/60)/60)/24)+DATE(1970,1,1).
+- Secondly: To convert a number month in text, was also difficult, because the position of values in the date cells had and specific order, so when you want to apply "month" function it displays wire numbers, so I had to change the order of the date so excell could recognize the position of the month and extracts it. 
+- Third: It was kind of difficult to stablished the percentage Axis in that scale, to undesrtand this, firstable we have to get the percentage with this formula: `$B2)/$E2`, and that is, for all the values, then we have to select the select the percentage format value, and finally select the vertical axis and stablish the range distributed along this axi.
 
 ![PercentageAxis](/Resources/Percentage.png)
 
